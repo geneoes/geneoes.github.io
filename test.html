@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Title of the document</title>
+
+</head>
+
+<body style="background: #0d1117">
+    <button id="my-btn">CLICK</button>
+</body>
+
+<script>
+
+
+    document.getElementById('my-btn').addEventListener('click', handleButtonClick, false);
+    var myEvent = new CustomEvent('my_event', { detail: { url: 'some url' } })
+    function handleButtonClick(e) {
+        window.parent.dispatchEvent(myEvent)
+    }
+</script>
+
+</html>
