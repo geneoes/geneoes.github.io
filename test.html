@@ -6,25 +6,8 @@
 
 
 </head>
-<script>
 
-	setTimeout(() => {
 
-		const btn = document.createElement("button");
-		btn.innerText = "SHARE";
-		btn.style.width = "100px";
-		btn.style.height = "48px";
-		btn.style.margin = "8px";
-
-		btn.onclick = () => {
-			const data = { url: 'https://twitter.com/luisnovaresio/status/1481253364939771906' }
-			console.log('SHAREE')
-			navigator.share(data)
-		};
-		document.body.append(btn)
-		console.log('appendedd', btn)
-	}, 5000)
-</script>
 <style>
 	body {
 		width: 80%;
