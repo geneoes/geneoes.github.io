@@ -2,54 +2,209 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width">
-    <title>My page title</title>
-    <link rel="stylesheet" href="">
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
 </head>
+<script>
+
+	setTimeout(() => {
+
+		const btn = document.createElement("button");
+		btn.innerText = "SHARE";
+		btn.style.width = "100px";
+		btn.style.height = "48px";
+		btn.style.margin = "8px";
+
+		btn.onclick = () => {
+			const data = { url: 'https://twitter.com/luisnovaresio/status/1481253364939771906' }
+			console.log('SHAREE')
+			navigator.share(data)
+		};
+		document.body.append(btn)
+		console.log('appendedd', btn)
+	}, 5000)
+</script>
+<style>
+	body {
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.embed {
+		display: flex;
+		justify-content: center;
+		margin: 2rem auto;
+	}
+</style>
+
 
 <body>
-    <button id="my-btn">CLICK</button>
-    <p class="output">iFrame body</p>
-    <h3 class="post">Channel messaging is mainly useful in cases where you've got a social site that embeds capabilities
-        from other
-        sites into its main interface via iframes, such as games, address book, or an audio player with personalized
-        music choices. When these act as standalone units, things are OK, but the difficulty comes when you want
-        interaction between the main site and the IFrames, or the different IFrames. For example, what if you wanted to
-        add a contact to the address book from the main site, add high scores from your game into your main profile, or
-        add new background music choices from the audio player onto the game? Such things are not so easy using
-        conventional web technology, because of the security models the web uses. You have to think about whether the
-        origins trust one another, and how the messages are passed.</h3>
+
+	<div>
+
+		Nulla vitae dapibus augue. Duis sem mi, aliquet sit amet faucibus ac, ornare at odio. Nunc sollicitudin, turpis
+		id rutrum sagittis, lorem lacus consectetur sem, eget posuere sem lacus dapibus turpis. Praesent augue sapien,
+		hendrerit vitae nulla id, pulvinar hendrerit nulla. Ut mollis vehicula nibh, quis scelerisque erat tincidunt
+		sed. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla et placerat
+		nisi, at scelerisque dui.
+
+
+		<div class="embed">
+
+			<blockquote class="stocktwits-embedded-post" data-origin="http://core-web-dev.stocktwits.com"
+				data-id="426040852">
+				<p lang="es" dir="ltr">:)
+				</p>&mdash; (@ennnio) <a href="http://core-web-dev.stocktwits.com/ennnio/message/426040852"> January 12,
+					2022</a>
+			</blockquote>
+			<script async src="http://core-web-dev.stocktwits.com/min/widgets.js" charset="utf-8"></script>
+		</div>
+
+
+		Morbi mollis elementum feugiat. Donec eget tincidunt justo. Sed vitae molestie purus. Ut in tempor sapien. Cras
+		blandit ipsum eu nunc cursus, in pellentesque sem aliquam. Integer facilisis quam sed neque sollicitudin congue
+		in et nisi. Suspendisse nec tristique magna.
+
+		Sed eget neque malesuada, imperdiet tortor ut, aliquet lacus. Pellentesque habitant morbi tristique senectus et
+		netus et malesuada fames ac turpis egestas. Nullam a posuere leo. Morbi vitae facilisis nisi. Maecenas ut nisi
+		eget felis scelerisque tempus luctus vel nibh. Ut vestibulum dolor non varius dictum. Pellentesque eu pretium
+		sem. Nulla tempor nibh imperdiet felis aliquam imperdiet.
+
+
+
+		Maecenas laoreet ac dui non fermentum. Aliquam vitae porta augue. Integer nec ullamcorper ligula, non venenatis
+		lacus. Praesent vel neque a risus venenatis luctus. Nam tristique sapien erat, vitae laoreet elit tincidunt non.
+		Curabitur feugiat diam sed sapien finibus consectetur. Vivamus maximus tellus quis ultricies luctus. In ac sem
+		eleifend, efficitur arcu sed, euismod erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+		posuere cubilia curae; Aliquam pretium ac nibh convallis mattis. Nunc condimentum est vel volutpat volutpat.
+		Suspendisse id sapien vitae odio pharetra tristique.
+
+
+	</div>
+
+
+	<div class="blog-stuff">
+
+		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+			industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+			scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into
+			electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
+			Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like
+			Aldus PageMaker including versions of Lorem Ipsum.
+		</p>
+
+
+		<div class="embed">
+			<blockquote class="stocktwits-embedded-post" data-origin="http://core-web-dev.stocktwits.com"
+				data-id="430670792">
+				<p lang="es" dir="ltr">$AAPL 🍏👍👍
+					https://www.ft.com/content/d500de8d-0d7c-4b2d-9275-f09b2d573ea1
+				</p>&mdash; (@MightyQuinn330) <a href="https://stocktwits.com/MightyQuinn330/message/430670792"> January
+					26,
+					2022</a>
+			</blockquote>
+			<script async src="http://core-web-dev.stocktwits.com/min/widgets.js" charset="utf-8"></script>
+		</div>
+
+		<p>
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when
+			looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+			letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+			desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+			search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+			over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+		</p>
+
+
+
+
+		<blockquote class="stocktwits-embedded-post" data-origin="http://core-web-dev.stocktwits.com"
+			data-id="432295329">
+			<p lang="es" dir="ltr">$AAPL $AMZN tinyurl.com/43f4ncvr
+			</p>&mdash; (@TerenceLedner) <a href="http://core-web-dev.stocktwits.com/TerenceLedner/message/432295329">
+				February 1,
+				2022</a>
+		</blockquote>
+		<script async src="http://core-web-dev.stocktwits.com/min/widgets.js" charset="utf-8"></script>
+
+
+
+
+
+		<div class="embed">
+			<blockquote class="stocktwits-embedded-post" data-origin="http://core-web-dev.stocktwits.com"
+				data-id="430459696">
+				<p lang="es" dir="ltr">$AAPL 🤣🤣🤣🤣📈📈📈📈📈📈✅✅✅✅✅✅👑👑👑👑👑👑🚗🚗🚗🚗🚗🚗🚗🛰🛰🛰🛰🛰🛰🛰
+					https://www.youtube.com/watch?v=LZK5VRuUfEY
+				</p>&mdash; (@lrgnike20) <a href="https://stocktwits.com/lrgnike20/message/430459696"> January 26,
+					2022</a>
+			</blockquote>
+			<script async src="http://core-web-dev.stocktwits.com/min/widgets.js" charset="utf-8"></script>
+		</div>
+
+
+		<p>
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when
+			looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+			letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+			desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+			search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+			over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+		</p>
+
+
+		<p>
+			Why do we use it?
+			It is a long established fact that a reader will be distracted by the readable content of a page when
+			looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+			letters, as opposed to using 'Content here, content here', making it look like readable English. Many
+			desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a
+			search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved
+			over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+		</p>
+
+
+
+		<div class="embed">
+			<blockquote class="stocktwits-embedded-post" data-origin="http://core-web-dev.stocktwits.com"
+				data-id="429361586">
+				<p lang="es" dir="ltr">Derp content_type: image/png
+					filename: CrownStoned.png
+					height: 2000
+					id: 934505358582489148
+					proxy_url: https://media.discordapp.net/attachm
+				</p>&mdash; (@Nickeltjes) <a href="https://stocktwits.com/Nickeltjes/message/429361586"> January 22,
+					2022</a>
+			</blockquote>
+			<script async src="http://core-web-dev.stocktwits.com/min/widgets.js" charset="utf-8"></script>
+		</div>
+
+
+
+
+		<div class="embed">
+			<blockquote class="stocktwits-embedded-post" data-origin="http://core-web-dev.stocktwits.com"
+				data-id="430672833">
+				<p lang="es" dir="ltr">Short $FB and Long $AAPL has been a killer trade. Every time the market thinks
+					Apple
+					is out of gas or stretching valuation, it pulls off another incredible move to the upside.
+					https://app.koyfin.com/s/cff69cda35
+				</p>&mdash; (@commonking) <a href="https://stocktwits.com/commonking/message/430672833"> January 26,
+					2022</a>
+			</blockquote>
+			<script async src="http://core-web-dev.stocktwits.com/min/widgets.js" charset="utf-8"></script>
+		</div>
+
+
+
+
+	</div>
+
+
+
 </body>
-<script>
-    var output = document.querySelector('.output');
-
-
-    document.getElementById('my-btn').addEventListener('click', handleButtonClick, false);
-    function handleButtonClick(e) {
-        window.parent.dispatchEvent(myEvent)
-    }
-    window.addEventListener('message', onMessage);
-    let answer;
-    function onMessage(e) {
-        output.innerHTML = e.data;
-        const post = document.querySelector('.post')
-
-        answer = (msg) => e.ports[0].postMessage(msg)
-        // Use the transfered port to post a message back to the main frame
-        e.ports[0].postMessage({
-            width: post.clientWidth,
-            height: post.clientHeight,
-        });
-    }
-
-    setTimeout(() => {
-        answer?.({ width: 100, height: 100 })
-    }, 3000)
-</script>
 
 </html>
